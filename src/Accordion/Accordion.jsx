@@ -4,6 +4,6 @@ import accordionData from "./Data";
 
 function Accordion(){
     return(<>
-    
+    <div className=""></div>
     </>)
 }
