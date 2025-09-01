@@ -1,12 +1,14 @@
 import './App.css'
-import Accordion from './Accordion/Accordion'
+import Accordion from './Project/Accordion/Accordion'
+import CreateRandomColour from './Project/Random Colour Generator/Rcg'
 
 function App() {
   return (
     <>
-    <Accordion></Accordion>
-    </>
+    <CreateRandomColour></CreateRandomColour>
+    </> 
   )
 }
 
 export default App
+  
