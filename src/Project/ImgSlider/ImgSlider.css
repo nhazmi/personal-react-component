@@ -1,0 +1,98 @@
+/* .SeparateContainer{
+    width: 1em;
+    height: 1em;
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.ImageContainer{
+    width: 2em;
+    height: 2em;
+} */
+
+.MainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.SeparateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.SeparateContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ClickableButton {
+  background-color: skyblue;
+  size: 0.5em;
+}
+
+.ClickableButton:active {
+  background-color: midnightblue;
+}
+
+#left {
+  position: fixed;
+  top: auto;
+  left: 28em;
+}
+
+#right {
+  position: fixed;
+  top: auto;
+  right: 28em;
+}
+
+#left,
+#right {
+  display: inline-flex; /* centers text inside */
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* button size */
+  height: 30px;
+  background-color: #f0f0f0; /* light gray background */
+  border: 2px solid #ccc; /* subtle border */
+  border-radius: 50%; /* makes it round */
+  cursor: pointer; /* pointer on hover */
+  font-size: 10px; /* arrow size */
+  transition: background 0.2s, transform 0.1s;
+  user-select: none; /* prevent text highlight */
+}
+
+#left:hover,
+#right:hover {
+  background-color: #ddd; /* darker on hover */
+}
+
+#left:active,
+#right:active {
+  background-color: #bbb; /* darker when pressed */
+  transform: scale(0.9); /* shrink effect */
+}
+
+.NavigationPanel {
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: white;
+  font-size: 1em;
+}
+
+.NavigationPanel:active {
+  transition-duration: 0.2s;
+}
+.NavigationPanel:hover {
+  transition-duration: 0.2s;
+  background-color: #bbb;
+}
