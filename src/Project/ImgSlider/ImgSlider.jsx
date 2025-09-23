@@ -4,6 +4,9 @@ import "./ImgSlider.css";
 function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [images, setImages] = useState([]);
+  const [click, setClick] = useState(false)
+  const [hover, setHover] = useState(false)
+  const [clicked, setClicked] = useState(null)
 
   async function fetchImage() {
     try {
@@ -26,9 +29,7 @@ function ImageSlider() {
     setCurrentIndex(index === images.length - 1 ? 0 : (i) => i + 1);
   }
 
-  function loading() {
-    return <div>Loading Data ! Please Wait</div>;
-  }
+  
 
   useEffect(function () {
     fetchImage();
@@ -69,6 +70,16 @@ function ImageSlider() {
                     key={number}
                     onClick={function () {
                       setCurrentIndex(index);
+                      setClick(true)
+                      setClicked(index)
+                  }}
+                    onMouseEnter={function(){
+                      setCurrentIndex(index)
+                      setHover(true)
+                    }}
+                    onMouseLeave={function(){
+                      setCurrentIndex(click? clicked: index)
+                      setHover(false)
                     }}
                   >
                     {number}

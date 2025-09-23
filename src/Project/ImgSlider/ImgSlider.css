@@ -24,6 +24,8 @@
   align-items: center;
   width: 50vw;
   height: 50vh;
+  position: relative;
+
 }
 
 .SeparateContainer img {
@@ -43,15 +45,15 @@
 }
 
 #left {
-  position: fixed;
-  top: auto;
-  left: 28em;
+  position: absolute;   /* change from fixed → absolute */
+  top: 50%;             /* center vertically */
+  left: 10px;
 }
 
 #right {
-  position: fixed;
-  top: auto;
-  right: 28em;
+  position: absolute;   /* change from fixed → absolute */
+  top: 50%;             /* center vertically */
+  right: 10px;
 }
 
 #left,
