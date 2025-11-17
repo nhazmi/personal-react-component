@@ -5,13 +5,14 @@
   "type": "module",
   "homepage": "https://nhazmi.github.io/personal-react-component",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
+
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
