@@ -1,0 +1,14 @@
+.content :hover { 
+    transform: scale(1.2);
+    cursor: pointer ;
+}
+
+.label:hover {
+    transform: scale(1.2);
+    cursor:pointer; 
+}
+
+.label:active{
+    transform: scale(0.9);
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+:root{
+    --bg-color: white;
+    --color: black;
+    --btn-color: black;
+    --btn-text-color: white;
+}
+/* root is used as a place for me to define a variable */
+/* variable is defined in css by --var-name */
+
+[theme = "Dark"]{
+    --bg-color:black;
+    --color:white;
+    --btn-color:white;
+    --btn-text-color: black;
+}
+/* the [ key : value ] in here is used to target an element in the jsx that has the attributes of this   */
+
+body{
+    background-color: var(--bg-color);
+    color: var(--color);
+    transition-duration: 0.5s;
+}
+
+button{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color );
+    transition: ease-in-out 0.5s;
+    border: none;
+}
+
+button:active{
+    transform:scale(1.3);
+}
+
+.mainContainer.opening{
+    animation: MainSlideOut 1s;
+    position: relative;
+}
+/* theres error somewhere here */
+
+.mainContainer.closing{
+    animation: slideIn 1s;
+    position: relative;
+}
+/* theres error somewhere here */
+
+.mainPopupContainer.opening{
+    animation: PopupSlideIn 1s;
+    position: relative;
+}
+/* theres error somewhere here */
+
+.mainPopupContainer.closing{
+    animation: PopupSlideIn 1s;
+    position: relative;
+}
+/* theres error somewhere here */
+
+@keyframes MainSlideIn{
+    0%{
+        top: 200px;
+    }
+    100%{
+        top:100px
+    }
+}
+/* try to think again about the logic */
+
+@keyframes PopupSlideIn{
+    0%{
+        top: 200px;
+    }
+    100%{
+        top:100px
+    }
+}
+/* try to think again about the logic */
+
+@keyframes MainSlideOut{
+    from{
+        top: 0px;
+    }
+    to{
+        top:100px
+    }
+}
+/* try to think again about the logic */
+
+@keyframes PopupSlideOut{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 200px
+    }
+}
+/* try to think again about the logic */

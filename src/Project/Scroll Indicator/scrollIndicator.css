@@ -1,0 +1,15 @@
+:root{
+    --gap-between-list:20px;
+    --margin:20px;
+    --font-type: monospace; 
+    --margin-between-container:50px;
+}
+
+li{
+    font-family: var(--font-type);
+    margin: var(--margin);
+}
+ 
+ul{
+    margin: var(--margin-between-container);
+}
