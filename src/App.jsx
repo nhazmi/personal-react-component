@@ -5,7 +5,7 @@ import './App.css'
 import StarRating from './Project/Star Rating/StrRating'
 // import ImageSlider from './Project/ImgSlider/ImgSlider'
 // import LoadMoreButton from './Project/Load More Button/LoadMoreButton'
-// import FibonnacciDisplayer from './Project/Fibbonacci Number/Fibonnacci'
+import FibonnacciDisplayer from './Project/Fibbonacci Number/Fibonnacci'
 // import UiViewComponent from './Project/Tree View Component/Tree'
 // import QrCodeGenerator from './Project/QR Code Generator/QrCode'
 import ToggleTheme from './Project/Toggle Theme/ToggleTheme'
@@ -31,7 +31,7 @@ function App() {
 
     {/* <LoadMoreButton></LoadMoreButton> */}
 
-    {/* <FibonnacciDisplayer></FibonnacciDisplayer> */}
+    <FibonnacciDisplayer></FibonnacciDisplayer>
 
     {/* <UiViewComponent items1={treeData}></UiViewComponent> */}
 
